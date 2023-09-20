@@ -30,9 +30,25 @@ SLIDE.addEventListener('wheel', (e) => {
 
 const SCROLL = document.querySelector('.scroll_btn');
 
-SCROLL.addEventListener('click', () => {
+SCROLL.addEventListener('click', (e) => {
     SCROLL.classList.add('.img_box');
 })
+
+const MOBILE = document.querySelectorAll('.mobile_btn');
+const MOB_BOX = document.querySelectorAll('.img_box .mobile');
+
+MOBILE.forEach((it, idx) => {
+    it.addEventListener('click', function(e){
+        e.preventDefault();
+        //MOB_BOX.forEach(it => it.classList.remove('on'));
+        MOB_BOX[idx].classList.toggle('on');
+    })
+})
+
+// MOBLIE.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     MOBLIE.classList.toggle('on');
+// })
 
 var TOP = new Swiper(".top_slide", {
     autoplay: {

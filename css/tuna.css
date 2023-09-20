@@ -82,23 +82,30 @@
     background: url(../imges/playstation.png)no-repeat top center/cover;
 }
 .main_page01 .top_slide .top07 figure{
-    background: url(../imges/sajotuna.png)no-repeat top center/cover;
+    background: url(../imges/Altool.png)no-repeat top center/cover;
 }
 
 .main_page01 .top_slide .top08 figure{
+    background: url(../imges/sajotuna.png)no-repeat top center/cover;
+}
+
+.main_page01 .top_slide .top09 figure{
     background: url(../imges/bluestone.png)no-repeat top center/cover;
 }
-.main_page01 .top_slide .top09 figure{
+.main_page01 .top_slide .top10 figure{
     background: url(../imges/movingegg.png)no-repeat top center/cover;
 }
-.main_page01 .top_slide .top10 figure{
+.main_page01 .top_slide .top11 figure{
     background: url(../imges/shinil.png)no-repeat top center/cover;
 }
-.main_page01 .top_slide .top11 figure{
+.main_page01 .top_slide .top12 figure{
     background: url(../imges/sk.png)no-repeat top center/cover;
 }
-.main_page01 .top_slide .top12 figure{
+.main_page01 .top_slide .top13 figure{
     background: url(../imges/playstation.png)no-repeat top center/cover;
+}
+.main_page01 .top_slide .top14 figure{
+    background: url(../imges/Altool_moblie.png)no-repeat top center/cover;
 }
 
 @media (max-width: 768px) {
@@ -190,23 +197,30 @@
     background: url(../imges/playstation.png)no-repeat top center/cover;
 }
 .main_page01 .bottom_slide .bottom07 figure{
-    background: url(../imges/sajotuna.png)no-repeat top center/cover;
+    background: url(../imges/Altool.png)no-repeat top center/cover;
 }
 
 .main_page01 .bottom_slide .bottom08 figure{
+    background: url(../imges/sajotuna.png)no-repeat top center/cover;
+}
+
+.main_page01 .bottom_slide .bottom09 figure{
     background: url(../imges/bluestone.png)no-repeat top center/cover;
 }
-.main_page01 .bottom_slide .bottom09 figure{
+.main_page01 .bottom_slide .bottom10 figure{
     background: url(../imges/movingegg.png)no-repeat top center/cover;
 }
-.main_page01 .bottom_slide .bottom10 figure{
+.main_page01 .bottom_slide .bottom11 figure{
     background: url(../imges/shinil.png)no-repeat top center/cover;
 }
-.main_page01 .bottom_slide .bottom11 figure{
+.main_page01 .bottom_slide .bottom12 figure{
     background: url(../imges/sk.png)no-repeat top center/cover;
 }
-.main_page01 .bottom_slide .bottom12 figure{
+.main_page01 .bottom_slide .bottom13 figure{
     background: url(../imges/playstation.png)no-repeat top center/cover;
+}
+.main_page01 .bottom_slide .bottom14 figure{
+    background: url(../imges/Altool_moblie.png)no-repeat top center/cover;
 }
 
 @media (max-width: 768px) {
@@ -368,13 +382,13 @@
 .main_page02 .slide .scroll_btn {
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 0;
     transform: translate(-50%, -50%);
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     color: #fff;
-    background: #528AA9;
+    background: #555555;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -382,13 +396,15 @@
     align-items: center;
     padding: 15px 0 0 0;
     cursor: pointer;
+    font-size: 28px;
+    z-index: 999;
 }
 
 @media (max-width: 768px) {
     .main_page02 .slide .scroll_btn {
-        top: 40%;
+        top: 100%;
         left: 50%;
-        font-size: 12px;
+        font-size: 16px;
         padding: 10px 0 0 0;
         width: 40px;
         height: 40px;
@@ -530,6 +546,10 @@
     }
 }
 
+.main_page02 .slide .con .txt_box .txt .link_box {
+    white-space: nowrap;
+}
+
 .main_page02 .slide .con .txt_box .txt .link_box a{
     display: inline-block;
     gap: 10px;
@@ -567,6 +587,7 @@
 
 .main_page02 .slide .con .img_box {
     grid-column: 7/17;
+    position: relative;
 }
 
 .main_page02 .slide .con .img_box figure {
@@ -574,6 +595,64 @@
     border-radius: 0 20px 20px 0;
     border-left: 1px solid #f0f0f0;
 }
+
+.main_page02 .slide .con .img_box .mobile {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0 20px 20px 0;
+}
+
+.main_page02 .slide .con .img_box .mobile figure{
+    border-radius: 10px;
+    border-left: none;
+   
+    /* width: 300px;
+    height: 400px; */
+
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    .main_page02 .slide .con .img_box .mobile {
+        border-radius: 20px 20px 0 0;
+    }
+    .main_page02 .slide .con .img_box .mobile figure {
+        width: 50%;
+        height: 70%;
+    }
+}
+
+.main_page02 .slide .con .img_box .mobile.on {
+    display: block;
+}
+
+.main_page02 .slide .con .img_box .mobile.on figure {
+    animation: scroll 20s;
+}
+
+
+@keyframes scroll {
+    0% {
+        background-position: top center;
+    }
+
+    100% {
+        background-position: bottom center;
+    }
+}
+
 
 @media (max-width: 768px) {
     .main_page02 .slide .con .img_box {
@@ -593,7 +672,7 @@
     }
 }
 
-.main_page02 .slide .con .img_box.on figure {
+.main_page02 .slide .con .img_box .scroll_btn:hover + figure {
     background-position: bottom center;
 }
 
@@ -601,12 +680,19 @@
     background-position: bottom center;
 } */
 
-.main_page02 .sajo .con .img_box figure{
+.main_page02 .sajo .con .img_box figure {
     background: url(../imges/sajotuna.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     transition: 4s;
+}
+
+.main_page02 .sajo .con .img_box .mobile figure{
+    background: url(../imges/sajotuna_moblie.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
 }
 
 .main_page02 .sajo .con .txt_box .txt ul>li .color .c01 {
@@ -630,6 +716,14 @@
     transition: 4s;
 }
 
+.main_page02 .blue .con .img_box .mobile figure{
+    background: url(../imges/bluestone_moblie.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+
 .main_page02 .blue .con .txt_box .txt ul>li .color .c01 {
     background: #035ac7;
 }
@@ -650,6 +744,14 @@
     transition: 4s;
 }
 
+.main_page02 .move .con .img_box .mobile figure{
+    background: url(../imges/movingegg_moblie.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+
 .main_page02 .move .con .txt_box .txt ul>li .color .c01 {
     background: #995f35;
 }
@@ -662,6 +764,10 @@
     background: #f7b83d;
 }
 
+.main_page02 .shin .con .txt_box .txt .link_box .mobile_btn {
+    display: none;
+}
+
 .main_page02 .shin .con .img_box figure{
     background: url(../imges/shinil.png);
     background-repeat: no-repeat;
@@ -669,6 +775,13 @@
     background-size: cover;
     transition: 4s;
 }
+
+/* .main_page02 .shin .con .img_box .mobile figure{
+    background: url(../imges/shinil.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+} */
 
 .main_page02 .shin .con .txt_box .txt ul>li .color .c01 {
     background: #ed2024;
@@ -692,6 +805,14 @@
     transition: 4s;
 }
 
+.main_page02 .sk .con .img_box .mobile figure{
+    background: url(../imges/sk_mobile.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+
 .main_page02 .sk .con .txt_box .txt ul>li .color .c01 {
     background: #EA002C;
 }
@@ -713,6 +834,13 @@
     transition: 4s;
 }
 
+.main_page02 .play .con .img_box .mobile figure{
+    background: url(../imges/play_moblie.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
 .main_page02 .play .con .txt_box .txt ul>li .color .c01 {
     background: #0070CC;
 }
@@ -722,6 +850,35 @@
 }
 
 .main_page02 .play .con .txt_box .txt ul>li .color .c03 {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+}
+
+.main_page02 .Altool .con .img_box figure{
+    background: url(../imges/Altool.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    transition: 4s;
+}
+
+.main_page02 .Altool .con .img_box .mobile figure{
+    background: url(../imges/Altool_moblie.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+
+.main_page02 .Altool .con .txt_box .txt ul>li .color .c01 {
+    background: #1a1a1a;
+}
+
+.main_page02 .Altool .con .txt_box .txt ul>li .color .c02 {
+    background: #08f;
+}
+
+.main_page02 .Altool .con .txt_box .txt ul>li .color .c03 {
     background: #fff;
     border: 1px solid #f0f0f0;
 }

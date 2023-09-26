@@ -57,7 +57,6 @@ var TOP = new Swiper(".top_slide", {
     },
     speed: 5000,
     loop: true,
-    //loopedSlides: 1,
     loopAdditionalSlides : 1,
     slidesPerView: 4,
     spaceBetween: 30,

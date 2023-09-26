@@ -62,7 +62,7 @@
     }
 }
 
-.main_page01 .top_slide .top01 figure{
+/* .main_page01 .top_slide .top01 figure{
     background: url(../imges/sajotuna.png)no-repeat top center/cover;
 }
 
@@ -106,9 +106,9 @@
 }
 .main_page01 .top_slide .top14 figure{
     background: url(../imges/Altool_moblie.png)no-repeat top center/cover;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .main_page01 .top_slide .top01 figure {
         background: url(../imges/intro_sajo.png)no-repeat center center/cover;
     }
@@ -145,7 +145,7 @@
     .main_page01 .top_slide .top12 figure {
         background: url(../imges/intro_play.png)no-repeat center center/cover;
     }
-}
+} */
 
 .main_page01 .bottom_slide {
     /* position: absolute;
@@ -177,7 +177,7 @@
     }
 }
 
-.main_page01 .bottom_slide .bottom01 figure{
+/* .main_page01 .bottom_slide .bottom01 figure{
     background: url(../imges/sajotuna.png)no-repeat top center/cover;
 }
 
@@ -260,7 +260,7 @@
     .main_page01 .bottom_slide .bottom12 figure {
         background: url(../imges/intro_play.png)no-repeat center center/cover;
     }
-}
+} */
 
 
 .main_page01 .bg_box {
